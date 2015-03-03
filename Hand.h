@@ -97,27 +97,27 @@ void Hand :: draw(int x, int y, bool should){
             s = hand[i].getSuit();
             if(should || i==0){
                 if(s == 'C'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[0]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[0]);
                 } else if(s == 'S'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[1]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[1]);
                 } else if(s == 'H'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[2]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[2]);
                 } else {
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[3]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[3]);
                 }
 
                 if(vv == 'T'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[4]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[4]);
                 } else if(vv == 'J'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[5]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[5]);
                 } else if(vv == 'Q'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[6]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[6]);
                 } else if(vv == 'K'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[7]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[7]);
                 }  else if(vv == 'A'){
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, suits[8]);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, suits[8]);
                 }else {
-                    glutBitmapCharacter(GLUT_BITMAP_9_BY_15, num[vv-'0']);
+                    glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, num[vv-'0']);
                 }
             }
             x+=75;

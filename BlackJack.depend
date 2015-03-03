@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1425424850 source:c:\users\andres\documents\programas\blackjack\main.cpp
+	<windows.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	<sstream>
+	<string>
+	"Card.h"
+	"Hand.h"
+	"Deck.h"
+
+1421533853 c:\users\andres\desktop\glut\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1425415653 c:\users\andres\documents\programas\blackjack\card.h
+	<windows.h>
+	<string.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<iostream>
+
+1425424685 c:\users\andres\documents\programas\blackjack\hand.h
+	<iostream>
+	"Card.h"
+
+1425415653 c:\users\andres\documents\programas\blackjack\deck.h
+	<iostream>
+	<string.h>
+	"Card.h"
+
