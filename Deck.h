@@ -63,7 +63,7 @@ void Deck :: shuffle()
         int sub2 = rand() % 52;
         Card sub3 = d[sub];
         d[sub] = d[sub2];
-        cards[sub2] = sub3;
+        d[sub2] = sub3;
     }
 }
 
