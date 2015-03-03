@@ -17,7 +17,7 @@ public:
     char getValue(int k);
     void shuffle();
     Card dealCard();
-    char * str();
+    void str();
     //void dibuja();
 
 
@@ -80,7 +80,7 @@ Card Deck :: dealCard()
     return d[posicion-1];
 }
 
-char * Deck :: str()
+void Deck :: str()
 {
     for(int i=0; i<52; i++)
     {
