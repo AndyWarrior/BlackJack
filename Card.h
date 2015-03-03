@@ -1,14 +1,22 @@
 #ifndef CARD_H_INCLUDED
 #define CARD_H_INCLUDED
 
-
+//
+//  Card.h
+//  BlackJack
+//
+//  Created by Ma. Guadalupe Roque on 21/07/14.
+//  Copyright (c) 2014 Ma. Guadalupe Roque. All rights reserved.
+//
+#include <windows.h>
 #include <string.h>
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
-#include <windows.h>
 #include <GL/glut.h>
 #endif
+
+#include <iostream>
 
 using namespace  std;
 
@@ -16,6 +24,7 @@ class Card
 {
 public:
     // Constructor
+    Card();
      Card(char ss, char vv);
 
     // metodos modificadores
@@ -36,46 +45,42 @@ public:
 private:
     // Atributos
     char s, v;
+
 };
 
-Card::Card(char ss, char vv)
-{
+Card:: Card(){
+    s = 'z';
+    v = 'z';
+}
+
+Card:: Card(char ss, char vv){
     s = ss;
     v = vv;
 }
 
 // metodos modificadores
-void Card::setSuit(char ss)
-{
+void Card::setSuit(char ss){
     s=ss;
 }
-void Card::setValue(char vv)
-{
+void Card::setValue(char vv){
     v=vv;
 }
 
 
-char Card::getSuit()
-{
+char Card::getSuit(){
     return s;
 }
 
-char Card::getValue()
-{
+char Card::getValue(){
     return v;
 }
 
-
-
-
-void Card::muestra()
-{
+void Card::muestra(){
     cout << s << ":" << v << endl;
 }
 
+ void Card::dibujaPoligono(int xMin, int xMax, int yMin, int yMax){
 
- void Card::dibujaPoligono(int xMin, int xMax, int yMin, int yMax)
-{
     glBegin(GL_POLYGON);
     glVertex2d( xMin,yMin);
     glVertex2d( xMax,yMin );
@@ -84,13 +89,11 @@ void Card::muestra()
     glEnd();
 
 }
-void Card::draw(int x, int y)
-{
+
+void Card::draw(int x, int y){
     glColor3ub(0, 0, 255);
-    dibujaPoligono(x, x+50, y, y+100);
+    dibujaPoligono(x, x+60, y, y+85);
 
 }
-
-
 
 #endif // CARD_H_INCLUDED

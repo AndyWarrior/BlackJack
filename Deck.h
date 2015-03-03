@@ -17,7 +17,7 @@ public:
     char getValue(int k);
     void shuffle();
     Card dealCard();
-    void str();
+    char * str();
     //void dibuja();
 
 
@@ -80,13 +80,12 @@ Card Deck :: dealCard()
     return d[posicion-1];
 }
 
-void Deck :: str()
+char * Deck :: str()
 {
     for(int i=0; i<52; i++)
     {
-        cout << d[i].getSuit() << d[i].getValue() << " ";
+        cout << d[i].getSuit() << d[i].getValue() << " " ;
     }
 }
-
 
 #endif // DECK_H_INCLUDED
