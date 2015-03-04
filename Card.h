@@ -8,11 +8,12 @@
 //  Created by Ma. Guadalupe Roque on 21/07/14.
 //  Copyright (c) 2014 Ma. Guadalupe Roque. All rights reserved.
 //
-#include <windows.h>
+
 #include <string.h>
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
+#include <windows.h>
 #include <GL/glut.h>
 #endif
 

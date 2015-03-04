@@ -2,10 +2,11 @@
  * Monica Lozano A01138967
  * Andres Lopez  A01138686
  */
-#include <windows.h>
+
 #ifdef __APPLE__
 #include <GLUT/glut.h>
 #else
+#include <windows.h>
 #include <GL/glut.h>
 #endif
 
